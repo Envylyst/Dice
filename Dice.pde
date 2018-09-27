@@ -1,10 +1,15 @@
+Die bob;
+
 void setup()
 {
+	size(500,500);
 	noLoop();
 }
 void draw()
 {
-	//your code here
+    background(0);
+    bob = new Die(50,50);
+    bob.show();
 }
 void mousePressed()
 {
