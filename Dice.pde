@@ -11,6 +11,7 @@ void draw()
     	{
     		Die bob = new Die(x,y);
     		bob.show();
+    		bob.roll();
     	}
     }
 }
@@ -31,14 +32,49 @@ class Die //models one single dice cube
 	void roll()
 	{
 		int roller = (int)((Math.random()*6)+1);
-	}
-	void show()
-	{
-		rect(myX,myY,50,50);
 		if(roller == 1)
 		{
 			ellipse(dotX+25,dotY+25,5,5);
 		}
-		
+		if(roller == 2)
+		{
+			ellipse(dotX+15, dotY+25 ,5, 5);
+			ellipse(dotX+35, dotY+25, 5, 5);
+		}
+		if (roller == 3)
+		{
+			ellipse(dotX+10, dotY+25 ,5, 5);
+			ellipse(dotX+25, dotY+25, 5, 5);
+			ellipse(dotX+40, dotY+25, 5, 5);
+		}
+		if (roller == 4)
+		{
+			ellipse(dotX+15, dotY+15 ,5, 5);
+			ellipse(dotX+15, dotY+35, 5, 5);
+			ellipse(dotX+35, dotY+15, 5, 5);
+			ellipse(dotX+35, dotY+35, 5, 5);
+		}
+		if (roller == 5)
+		{
+			ellipse(dotX+15, dotY+15 ,5, 5);
+			ellipse(dotX+15, dotY+35, 5, 5);
+			ellipse(dotX+35, dotY+15, 5, 5);
+			ellipse(dotX+35, dotY+35, 5, 5);
+			ellipse(dotX+25, dotY+25, 5, 5);
+		}
+		if (roller == 6)
+		{
+			ellipse(dotX+10, dotY+15 ,5, 5);
+			ellipse(dotX+10, dotY+35, 5, 5);
+			ellipse(dotX+40, dotY+15, 5, 5);
+			ellipse(dotX+40, dotY+35, 5, 5);
+			ellipse(dotX+25, dotY+15, 5, 5);
+			ellipse(dotX+25, dotY+35, 5, 5);
+		}
+
+	}
+	void show()
+	{
+		rect(myX,myY,50,50);
 	}
 }	
