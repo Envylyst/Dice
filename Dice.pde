@@ -16,7 +16,7 @@ void draw()
         sum = sum + bob.roller;
       }
     }
-    rect(140,515,190,50);
+    rect(140,515,200,50);
     textSize(25);
     fill(0);
     text("Your total is "+ sum, 150, 550);
